@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../css/frontend.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../scripts/js/jquery.tmpl.js"></script>
+</head>
+
+<body>
+    <div id="tb"></div>
+
+</body>
+<script type="text/x-jquery-tmpl" id="tbTemplate">
+    <table>
+        <caption>
+            <h2>${title}</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>属性</th>
+                <th>描述</th>
+                <th>值</th>
+            </tr>
+        </thead>
+        <tbody id="${flag}">
+        </tbody>
+    </table>
+</script>
+<script type="text/x-jquery-tmpl" id="tdTemplate">
+    <tr>
+        <td>
+            ${attr}
+        </td>
+        <td>
+            ${desc}
+        </td>
+        <td>
+            ${value}
+        </td>
+    </tr>
+</script>
+<script src="../scripts/js/frontend.js"></script>
+
+</html>
