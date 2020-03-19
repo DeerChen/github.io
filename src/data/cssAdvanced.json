@@ -1,0 +1,254 @@
+[
+    {
+        "title": "引入",
+        "skill": [
+            {
+                "desc": "外链式",
+                "content": "放<head>里，<link rel='stylesheet' type='text/css' href='style.css'></link>"
+            },
+            {
+                "desc": "内部式",
+                "content": "写<style>里"
+            },
+            {
+                "desc": "内联式",
+                "content": "<标签 style='声明'>"
+            },
+            {
+                "desc": "优先级",
+                "content": "!important > 内联[1000] > id[100] > 类[10] > 普通[1] > *"
+            }
+        ]
+    },
+    {
+        "title": "文本",
+        "skill": [
+            {
+                "desc": "letter-spacing和word-spacing",
+                "content": "一个字间距, 一个词间距"
+            },
+            {
+                "desc": "汉字间距",
+                "content": "也用letter-spacing调节, 因为中文之间无空格"
+            }
+        ]
+    },
+    {
+        "title": "字体",
+        "skill": [
+            {
+                "desc": "Serif和Sans-serif",
+                "content": "Sans-serif无衬线, 更易阅读"
+            },
+            {
+                "desc": "Monospace",
+                "content": "等宽字体"
+            },
+            {
+                "desc": "em",
+                "content": "1em = 16px"
+            },
+            {
+                "desc": "oblique和italic",
+                "content": "一个让没有倾斜属性的字体倾斜, 一个利用字体本身斜体"
+            }
+        ]
+    },
+    {
+        "title": "链接",
+        "skill": [
+            {
+                "desc": "Love & Hate",
+                "content": "L[ink]oV[isited]e & H[over]A[ctive]te"
+            }
+        ]
+    },
+    {
+        "title": "盒子",
+        "skill": [
+            {
+                "desc": "模型",
+                "content": "外边距 > 边框 > 内边距 > 内容"
+            }
+        ]
+    },
+    {
+        "title": "边框",
+        "skill": [
+            {
+                "desc": "方向",
+                "content": "上下绑定，左右绑定，顺时针转"
+            },
+            {
+                "desc": "outline",
+                "content": "轮廓环绕边框走"
+            }
+        ]
+    },
+    {
+        "title": "显示",
+        "skill": [
+            {
+                "desc": "display: none和visibility: hidden",
+                "content": "一个不占空间, 一个占空间"
+            },
+            {
+                "desc": "块状block",
+                "content": "总能是独占一行, 宽高边距都可控"
+            },
+            {
+                "desc": "内联inline",
+                "content": "与相邻内联在一行, 宽高边距不可变"
+            }
+        ]
+    },
+    {
+        "title": "定位",
+        "skill": [
+            {
+                "desc": "层级谁高",
+                "content": "fixed > 0 > float > static, 所以必须有z-index"
+            },
+            {
+                "desc": "占位",
+                "content": "absolute不占位置, relative占空间"
+            },
+            {
+                "desc": "子绝父相",
+                "content": "子元素position: absolute, 父级元素position: relative"
+            }
+        ]
+    },
+    {
+        "title": "对齐",
+        "skill": [
+            {
+                "desc": "水平居中",
+                "content": "margin: auto, 需设置width且不能是100%"
+            },
+            {
+                "desc": "左右对齐",
+                "content": "用position: absolute和right|left, 或用float"
+            },
+            {
+                "desc": "子元素高于父元素且设置浮动, 将导致溢出",
+                "content": "clearfix"
+            },
+            {
+                "desc": "垂直居中",
+                "content": "单行文本用padding或line-height, 多行文本用vertical-align, 还可以用transform: translate(-50%, -50%)"
+            }
+        ]
+    },
+    {
+        "title": "伪类伪元素",
+        "skill": [
+            {
+                "desc": "滚动条",
+                "content": "::-webkit-scrollbar"
+            },
+            {
+                "desc": ":after",
+                "content": "content: ''"
+            },
+            {
+                "desc": "三角",
+                "content": "position: absolute; border; border-color"
+            }
+        ]
+    },
+    {
+        "title": "媒体",
+        "skill": [
+            {
+                "desc": "@media",
+                "content": "screen屏幕, print打印机"
+            }
+        ]
+    },
+    {
+        "title": "属性选择器",
+        "skill": [
+            {
+                "desc": "|=和^=",
+                "content": "一个要完整切分, ~=也要独立完整, 一个只要前头字母对上即可"
+            }
+        ]
+    },
+    {
+        "title": "渐变",
+        "skill": [
+            {
+                "desc": "线性渐变",
+                "content": "background-image: linear-gradient(direction:to 方向|形状, color-start, color-stop)"
+            },
+            {
+                "desc": "径向渐变",
+                "content": "radial-gradient(closest-side|farthest-side|clonest-corner|farthest-corner at 百分比, color)"
+            }
+        ]
+    },
+    {
+        "title": "图像",
+        "skill": [
+            {
+                "desc": "滤镜",
+                "content": "filter: grayscale(百分比)|brightness|contrast|hue-rotate|invert|opacity|saturate|sepia|drop-shadow"
+            }
+        ]
+    },
+    {
+        "title": "弹性盒子",
+        "skill": [
+            {
+                "desc": "弹性盒子",
+                "content": "父级display: flex"
+            },
+            {
+                "desc": "flex-direction",
+                "content": "row|row-reverse|column|column-reverse"
+            },
+            {
+                "desc": "justify-content主轴方向",
+                "content": "flex-start|flex-end|center|space-between|space-around"
+            },
+            {
+                "desc": "align-items侧轴方向",
+                "content": "flex-start|flex-end|center|baseline|stretch"
+            },
+            {
+                "desc": "flex-wrap",
+                "content": "nowrap|wrap|wrap-reverse"
+            },
+            {
+                "desc": "align-content",
+                "content": "flex-end|flex-start|center|space-between|space-around|stretch"
+            },
+            {
+                "desc": "子元素属性",
+                "content": "order: 越小排越前, align-self: 自身侧轴对齐, flex: 分配空间"
+            },
+            {
+                "desc": "多行行内",
+                "content": "子元素display:table-cell, 父级display: table"
+            }
+        ]
+    },
+    {
+        "title": "响应式",
+        "skill": [
+            {
+                "desc": "视口, 针对移动端",
+                "content": "<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=false'>"
+            },
+            {
+                "desc": "网格视图",
+                "content": "共12列"
+            },
+            {
+                "desc": "设备",
+                "content": "断点: 桌面768px > 平板600px > 小屏, orientation: portrait横屏|landscape竖屏"
+            }
+        ]
+    }
+]

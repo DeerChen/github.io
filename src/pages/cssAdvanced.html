@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS进阶</title>
+    <link rel="stylesheet" href="../css/frontend.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../scripts/js/jquery.tmpl.js"></script>
+</head>
+
+<body>
+    <div id="container"></div>
+</body>
+<script type="text/x-jquery-tmpl" id="template">
+    <ol>
+        <fieldset>
+            <legend>${title}</legend>
+            {%each skill%}
+                <li>
+                    ${$value.desc}: ${$value.content}
+                </li>
+            {%/each%}
+        </fieldset>
+    </ol>
+</script>
+<script src="../scripts/js/frontend.js"></script>
+
+</html>

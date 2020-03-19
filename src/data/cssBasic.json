@@ -1,0 +1,797 @@
+[
+    {
+        "title": "动画",
+        "content": [
+            {
+                "attr": "@keyframes",
+                "desc": "关键帧",
+                "value": "动画名必需, from, to"
+            },
+            {
+                "attr": "animation",
+                "desc": "动画",
+                "value": "name, duration: 时长, timing-function='linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(n, n, n, n)', delay, iteration-count='infinite', direction='normal|alternate'"
+            },
+            {
+                "attr": "animation-play-state",
+                "desc": "播放状态",
+                "value": "paused|running"
+            },
+            {
+                "attr": "animation-fill-mode",
+                "desc": "动画效果保持",
+                "value": "none|forwards|backwards|both"
+            }
+        ]
+    },
+    {
+        "title": "背景",
+        "content": [
+            {
+                "attr": "background",
+                "desc": "背景",
+                "value": "color='transparent', position='x y', size='宽 高|cover|contain', repeat='repeat|no-repeat|repeat-x|repeat-y', origin: 相对定位='padding-box|border-box|content-box', clip: 绘制区域='border-box|padding-box|content-box', attachment='scroll|fixed', image='url()'"
+            }
+        ]
+    },
+    {
+        "title": "边框",
+        "content": [
+            {
+                "attr": "border",
+                "desc": "边框",
+                "value": "width='thin|medium|thick', style='hidden|dotted|dashed|solid|double|groove|ridge|inset|outset', color"
+            },
+            {
+                "attr": "border-bottom",
+                "desc": "下边框",
+                "value": ""
+            },
+            {
+                "attr": "border-left",
+                "desc": "左边框",
+                "value": ""
+            },
+            {
+                "attr": "border-right",
+                "desc": "右边框",
+                "value": ""
+            },
+            {
+                "attr": "border-top",
+                "desc": "上边框",
+                "value": ""
+            },
+            {
+                "attr": "outline",
+                "desc": "不占空间边框",
+                "value": "color, width, style"
+            },
+            {
+                "attr": "border-image",
+                "desc": "边框图",
+                "value": "source, slice: 内偏移=‘x y|fill’, width, outset: 外溢, repeat='stretch|repeat|round'"
+            },
+            {
+                "attr": "border-radius",
+                "desc": "边角",
+                "value": "top-left-radius, top-right-radius, bottom-right-radius, bottom-left-radius"
+            },
+            {
+                "attr": "box-shadow",
+                "desc": "盒阴影",
+                "value": "h-shadow: 水平阴影, v-shadow: 垂直阴影, blur: 模糊距离, spread: 阴影尺寸, color, inset: 转为内阴影"
+            }
+        ]
+    },
+    {
+        "title": "盒子",
+        "content": [
+            {
+                "attr": "overflow-x",
+                "desc": "左右溢出",
+                "value": "visile|hidden|scroll|auto|no-display|no-content"
+            },
+            {
+                "attr": "overflow-y",
+                "desc": "上下溢出",
+                "value": ""
+            },
+            {
+                "attr": "overflow-style",
+                "desc": "溢出滚动方式",
+                "value": "auto|scrollbar|panner|move|marquee"
+            }
+        ]
+    },
+    {
+        "title": "颜色",
+        "content": [
+            {
+                "attr": "opacity",
+                "desc": "不透明度",
+                "value": ""
+            }
+        ]
+    },
+    {
+        "title": "尺寸",
+        "content": [
+            {
+                "attr": "height",
+                "desc": "高度",
+                "value": ""
+            },
+            {
+                "attr": "max-height",
+                "desc": "最大高度",
+                "value": ""
+            },
+            {
+                "attr": "max-width",
+                "desc": "最大宽度",
+                "value": ""
+            },
+            {
+                "attr": "min-height",
+                "desc": "最小高度",
+                "value": ""
+            },
+            {
+                "attr": "min-width",
+                "desc": "最小宽度",
+                "value": ""
+            },
+            {
+                "attr": "width",
+                "desc": "宽度",
+                "value": ""
+            }
+        ]
+    },
+    {
+        "title": "弹性",
+        "content": [
+            {
+                "attr": "-webkit-box-align|-moz-box-align",
+                "desc": "子元素对齐",
+                "value": "start|end|center|baseline|stretch"
+            },
+            {
+                "attr": "-webkit-box-direction|-moz-box-direction",
+                "desc": "子元素方向",
+                "value": "normal|reverse"
+            },
+            {
+                "attr": "-webkit-box-flex|-moz-box-flex",
+                "desc": "子元素伸缩",
+                "value": "倍数"
+            },
+            {
+                "attr": "-webkit-box-ordinal-group|-moz-box-ordinal-group",
+                "desc": "子元素显示次序",
+                "value": "值越低越靠前"
+            },
+            {
+                "attr": "-webkit-box-orient|-moz-box-orient",
+                "desc": "子元素排序",
+                "value": "horizontal|vertical|inline-axis|block-axis"
+            },
+            {
+                "attr": "-webkit-box-pack|-moz-box-pack",
+                "desc": "子元素位置",
+                "value": "start|end|center|justify"
+            }
+        ]
+    },
+    {
+        "title": "字体",
+        "content": [
+            {
+                "attr": "font",
+                "desc": "字体",
+                "value": "style='normal|italic|oblique', variant='normal|small-caps', weight='normal(400)|bold(700)|bolder|lighter', size|line-height='xx-small|x-small|small|medium|large|x-large|xx-large|smaller|larger', family, caption: 控件字体, icon, menu: 下拉列表, message-box: 对话框字体, small-caption, status-bar"
+            },
+            {
+                "attr": "font-size-adjust",
+                "desc": "小号字体比率",
+                "value": ""
+            },
+            {
+                "attr": "font-variant",
+                "desc": "小号小写转大写字母",
+                "value": "normal|small-caps"
+            }
+        ]
+    },
+    {
+        "title": "内容",
+        "content": [
+            {
+                "attr": "content",
+                "desc": "内容, 配合:before和:after",
+                "value": "normal|attr(属性)|counter(计数器名)"
+            },
+            {
+                "attr": "counter-increment",
+                "desc": "计数器",
+                "value": "计数器名"
+            },
+            {
+                "attr": "counter-reset",
+                "desc": "创建或归零计数器",
+                "value": ""
+            },
+            {
+                "attr": "quotes",
+                "desc": "引号",
+                "value": "同级依次成双"
+            }
+        ]
+    },
+    {
+        "title": "链接",
+        "content": [
+            {
+                "attr": "target",
+                "desc": "链接打开方式",
+                "value": "name='current|root|parent|new|modal|name', new='window|tab|none', position='above|behind|front|back'"
+            }
+        ]
+    },
+    {
+        "title": "列表",
+        "content": [
+            {
+                "attr": "list-style",
+                "desc": "列表样式",
+                "value": "type='disc|circle|square|decimal|decimal-leading-zero|lower-roman|upper-roman|lower-alpha|upper-alpha|lower-greek|lower-latin|upper-latin|hebrew|armenian|georgian|cjk-ideographic|hiragana|katakana|hiragana-iroha|katakana-iroha', position='inside|outside', image"
+            }
+        ]
+    },
+    {
+        "title": "外边距",
+        "content": [
+            {
+                "attr": "margin",
+                "desc": "外边距",
+                "value": "上右下左"
+            }
+        ]
+    },
+    {
+        "title": "多列",
+        "content": [
+            {
+                "attr": "column-gap",
+                "desc": "列间隔",
+                "value": "normal"
+            },
+            {
+                "attr": "column-rule",
+                "desc": "列表样式",
+                "value": "width='thin|medium|thick', style='hidden|dotted|dashed|solid|double|groove|ridge|inset|outset', color"
+            },
+            {
+                "attr": "column-span",
+                "desc": "横跨列数",
+                "value": "1|all"
+            },
+            {
+                "attr": "columns",
+                "desc": "列属性",
+                "value": "width, count: 分隔列数"
+            }
+        ]
+    },
+    {
+        "title": "内边距",
+        "content": [
+            {
+                "attr": "padding",
+                "desc": "内边距",
+                "value": ""
+            }
+        ]
+    },
+    {
+        "title": "定位",
+        "content": [
+            {
+                "attr": "bottom",
+                "desc": "下边界距离",
+                "value": ""
+            },
+            {
+                "attr": "clear",
+                "desc": "不允许浮动",
+                "value": "left|right|both|none"
+            },
+            {
+                "attr": "clip",
+                "desc": "剪裁",
+                "value": "rect(上, 右, 下, 左): 矩形"
+            },
+            {
+                "attr": "cursor",
+                "desc": "鼠标",
+                "value": "default|crosshair|pointer|move|e-resize|ne-resize|nw-resize|n-resize|se-resize|sw-resize|s-resize|w-resize|text|wait|help"
+            },
+            {
+                "attr": "display",
+                "desc": "显示形式",
+                "value": "block: 前后有换行符|inline|inline-block: 行内块|list-item|run-in|table|inline-table|table-row-group: 类似tbody|table-header-group|table-footer-group|table-row|table-column-group|table-cell|table-caption"
+            },
+            {
+                "attr": "float",
+                "desc": "浮动",
+                "value": "none|left|right"
+            },
+            {
+                "attr": "left",
+                "desc": "左边界距离",
+                "value": ""
+            },
+            {
+                "attr": "overflow",
+                "desc": "溢出",
+                "value": "visible|hidden|scroll|auto"
+            },
+            {
+                "attr": "position",
+                "desc": "定位",
+                "value": "absolute: 相对父|fixed: 相对浏览器|relative: 相对原始|static|sticky: 粘性"
+            },
+            {
+                "attr": "right",
+                "desc": "右边界距离",
+                "value": ""
+            },
+            {
+                "attr": "top",
+                "desc": "上边界距离",
+                "value": ""
+            },
+            {
+                "attr": "vertial-align",
+                "desc": "垂直对齐",
+                "value": "baseline|sub|super|top|text-top: 与父顶|middle|bottom|text-bottom"
+            },
+            {
+                "attr": "visibility",
+                "desc": "可见",
+                "value": "visible|hidden|collapse: 删除但留空"
+            },
+            {
+                "attr": "z-index",
+                "desc": "堆叠顺序",
+                "value": ""
+            }
+        ]
+    },
+    {
+        "title": "打印",
+        "content": [
+            {
+                "attr": "page-break-after",
+                "desc": "元素后分页",
+                "value": "auto|always: 元素后分页|avoid|left: 元素后足够分页符直到新空白页|right"
+            },
+            {
+                "attr": "page-break-before",
+                "desc": "元素前分页",
+                "value": ""
+            },
+            {
+                "attr": "page-break-inside",
+                "desc": "元素内分页",
+                "value": "auto|void"
+            }
+        ]
+    },
+    {
+        "title": "表格",
+        "content": [
+            {
+                "attr": "border-collapse",
+                "desc": "合并边框",
+                "value": "separate|collapse: 合并, 会忽略border-spacing和empty-cells"
+            },
+            {
+                "attr": "border-spacing",
+                "desc": "相邻格间距",
+                "value": "h v"
+            },
+            {
+                "attr": "caption-side",
+                "desc": "标题位置",
+                "value": "top: 表格之上|bottom"
+            },
+            {
+                "attr": "empty-cells",
+                "desc": "空格样式",
+                "value": "hide|show"
+            },
+            {
+                "attr": "table-layout",
+                "desc": "列宽布局",
+                "value": "automatic: 内容决定|fixed: 表宽列宽决定"
+            }
+        ]
+    },
+    {
+        "title": "文本",
+        "content": [
+            {
+                "attr": "color",
+                "desc": "颜色",
+                "value": ""
+            },
+            {
+                "attr": "direction",
+                "desc": "方向",
+                "value": "ltr|rtl"
+            },
+            {
+                "attr": "letter-spacing",
+                "desc": "字间距",
+                "value": ""
+            },
+            {
+                "attr": "line-height",
+                "desc": "行高",
+                "value": ""
+            },
+            {
+                "attr": "text-align",
+                "desc": "对齐",
+                "value": "left|right|center|justify"
+            },
+            {
+                "attr": "text-decoration",
+                "desc": "装饰",
+                "value": "underline|overline|line-through|blink: 闪烁"
+            },
+            {
+                "attr": "text-indent",
+                "desc": "首行缩进",
+                "value": ""
+            },
+            {
+                "attr": "text-transform",
+                "desc": "大小写",
+                "value": "capitalize|uppercase|lowercase"
+            },
+            {
+                "attr": "unicode-bidi",
+                "desc": "方向",
+                "value": "normal|embed|bidi-override"
+            },
+            {
+                "attr": "white-space",
+                "desc": "元素空白",
+                "value": "normal|per: 类似<pre>|nowrap|pre-wrap: 保留换行|pre-line: 合并换行"
+            },
+            {
+                "attr": "word-spacing",
+                "desc": "词间距",
+                "value": ""
+            },
+            {
+                "attr": "text-overflow",
+                "desc": "文本溢出",
+                "value": "clip|ellipsis: 省略号"
+            },
+            {
+                "attr": "text-shadow",
+                "desc": "文本阴影",
+                "value": "h-shadow: 水平阴影, v-shadow: 垂直阴影"
+            },
+            {
+                "attr": "text-wrap",
+                "desc": "文本换行",
+                "value": "none: 不换行会溢出|normal: 只在允许出换行|unrestricted: 任意换行|suppress: 压缩换行"
+            },
+            {
+                "attr": "word-break",
+                "desc": "非中日韩字符断字",
+                "value": "normal|break-all: 可词内|keep-all: 半角或连字符处"
+            },
+            {
+                "attr": "word-wrap",
+                "desc": "长词换行",
+                "value": "normal|break-word: 长词或链接内部"
+            }
+        ]
+    },
+    {
+        "title": "转换",
+        "content": [
+            {
+                "attr": "transform",
+                "desc": "转换",
+                "value": "matrix(6值)|matrix3d(16值4*4)|translte(x, y)|translate3d(x, y, z)|translateX()|translateY()|translateZ()|scale(x, y)|scale3d(x, y, z)|scaleX()|scaleY()|scaleZ()|rotate()|rotate3d()|rotateX()|rotateY()|rotateZ()|skew(x, y): 倾斜|skewX()|skewY()|perspective(): 透视"
+            },
+            {
+                "attr": "transform-origin",
+                "desc": "置于轴侧",
+                "value": "x-axis='left|center|right' y-axis='top|center|bottom' z-axis"
+            },
+            {
+                "attr": "transform-style",
+                "desc": "子元素是否保留3d位置",
+                "value": "flat: 不保留|preserve-3d"
+            },
+            {
+                "attr": "-webkit-perspective",
+                "desc": "透视距离",
+                "value": ""
+            },
+            {
+                "attr": "-webkit-perspecitve-origin",
+                "desc": "透视基点",
+                "value": "x-axis='left|center|right' y-axis='top|center|bottom'"
+            },
+            {
+                "attr": "backface-visibility",
+                "desc": "背面可见",
+                "value": "visible|hidden"
+            }
+        ]
+    },
+    {
+        "title": "过渡",
+        "content": [
+            {
+                "attr": "transition",
+                "desc": "过渡",
+                "value": "property: 过渡属性='none|all|属性名' duration timing-function: 速度曲线 delay"
+            }
+        ]
+    },
+    {
+        "title": "界面",
+        "content": [
+            {
+                "attr": "-webkit-appearance|-moz-appearance",
+                "desc": "伪装",
+                "value": "normal|icon|window|button|menu|field"
+            },
+            {
+                "attr": "box-sizing",
+                "desc": "盒尺寸",
+                "value": "content-box|border-box"
+            },
+            {
+                "attr": "outline-offset",
+                "desc": "轮廓偏移",
+                "value": ""
+            },
+            {
+                "attr": "resize",
+                "desc": "允许重调整尺寸",
+                "value": "none|both|horizontal|vertical"
+            }
+        ]
+    },
+    {
+        "title": "选择器",
+        "content": [
+            {
+                "attr": ".class",
+                "desc": "类名选择器",
+                "value": ""
+            },
+            {
+                "attr": "#id",
+                "desc": "id选择器",
+                "value": ""
+            },
+            {
+                "attr": "*",
+                "desc": "全部",
+                "value": ""
+            },
+            {
+                "attr": "element",
+                "desc": "选择器",
+                "value": ""
+            },
+            {
+                "attr": ",",
+                "desc": "和",
+                "value": ""
+            },
+            {
+                "attr": ">",
+                "desc": "父下所有子",
+                "value": ""
+            },
+            {
+                "attr": "+",
+                "desc": "紧随其后的第一个",
+                "value": ""
+            },
+            {
+                "attr": "[]",
+                "desc": "带框中属性的",
+                "value": ""
+            },
+            {
+                "attr": "=",
+                "desc": "等于",
+                "value": ""
+            },
+            {
+                "attr": "~=",
+                "desc": "包含",
+                "value": ""
+            },
+            {
+                "attr": "|=",
+                "desc": "以此开头的",
+                "value": ""
+            },
+            {
+                "attr": ":link",
+                "desc": "未访问的",
+                "value": ""
+            },
+            {
+                "attr": ":visited",
+                "desc": "已访问的",
+                "value": ""
+            },
+            {
+                "attr": ":active",
+                "desc": "被点击的",
+                "value": ""
+            },
+            {
+                "attr": ":hover",
+                "desc": "鼠标划过时",
+                "value": ""
+            },
+            {
+                "attr": ":focus",
+                "desc": "获得焦点的",
+                "value": ""
+            },
+            {
+                "attr": ":first-letter",
+                "desc": "首字母",
+                "value": ""
+            },
+            {
+                "attr": ":first-line",
+                "desc": "首行",
+                "value": ""
+            },
+            {
+                "attr": ":first-child",
+                "desc": "第一个子元素的",
+                "value": ""
+            },
+            {
+                "attr": ":before",
+                "desc": "之前",
+                "value": ""
+            },
+            {
+                "attr": ":after",
+                "desc": "之后",
+                "value": ""
+            },
+            {
+                "attr": ":lang()",
+                "desc": "语言属性以此开头的",
+                "value": ""
+            },
+            {
+                "attr": "~",
+                "desc": "前有兄的所有弟",
+                "value": ""
+            },
+            {
+                "attr": "^=",
+                "desc": "以此开头的",
+                "value": ""
+            },
+            {
+                "attr": "$=",
+                "desc": "以此结尾的",
+                "value": ""
+            },
+            {
+                "attr": "*=",
+                "desc": "包含有此的",
+                "value": ""
+            },
+            {
+                "attr": ":first-of-type",
+                "desc": "首个符合的",
+                "value": ""
+            },
+            {
+                "attr": ":last-of-type",
+                "desc": "最后符合的",
+                "value": ""
+            },
+            {
+                "attr": ":only-of-type",
+                "desc": "符合且唯一的",
+                "value": ""
+            },
+            {
+                "attr": ":only-child",
+                "desc": "符合且是唯一子元素时",
+                "value": ""
+            },
+            {
+                "attr": ":nth-child()",
+                "desc": "第n个子元素且符合的",
+                "value": "odd: 奇数, even: 偶数"
+            },
+            {
+                "attr": ":nth-last-child()",
+                "desc": "倒数第n个子元素且符合的",
+                "value": ""
+            },
+            {
+                "attr": ":nth-of-type()",
+                "desc": "第n个符合的",
+                "value": ""
+            },
+            {
+                "attr": ":nth-last-of-type()",
+                "desc": "倒数第n个符合的",
+                "value": ""
+            },
+            {
+                "attr": ":last-child",
+                "desc": "最后之子",
+                "value": ""
+            },
+            {
+                "attr": ":root",
+                "desc": "根, 通常是html",
+                "value": ""
+            },
+            {
+                "attr": ":empty",
+                "desc": "没有子的",
+                "value": ""
+            },
+            {
+                "attr": ":target",
+                "desc": "当前活动的",
+                "value": ""
+            },
+            {
+                "attr": ":enabled",
+                "desc": "开启的",
+                "value": ""
+            },
+            {
+                "attr": ":disabled",
+                "desc": "关闭的",
+                "value": ""
+            },
+            {
+                "attr": ":checked",
+                "desc": "被选中的",
+                "value": ""
+            },
+            {
+                "attr": ":not()",
+                "desc": "不是的",
+                "value": ""
+            },
+            {
+                "attr": "::selection",
+                "desc": "被拉选的",
+                "value": ""
+            }
+        ]
+    }
+]

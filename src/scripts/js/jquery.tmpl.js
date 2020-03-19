@@ -17,12 +17,15 @@
     {%= js call %}
     {%html js call %}
 */
-(function($, undefined) {
+(function ($, undefined) {
     var oldManip = $.fn.domManip,
         tmplItmAtt = "_tmplitem",
         newTmplItems = {},
         wrappedItems = {},
-        appendToTmplItems, topTmplItem = { key: 0, data: {} },
+        appendToTmplItems, topTmplItem = {
+            key: 0,
+            data: {}
+        },
         itemKey = 0,
         cloneIndex = 0,
         stack = [];
@@ -59,7 +62,10 @@
             update: tiUpdate
         };
         if (options) {
-            $.extend(newItem, options, { nodes: [], parent: parentItem });
+            $.extend(newItem, options, {
+                nodes: [],
+                parent: parentItem
+            });
         }
         if (fn) {
             // Build the hierarchical content to be used during insertion into DOM
@@ -79,8 +85,8 @@
         insertBefore: "before",
         insertAfter: "after",
         replaceAll: "replaceWith"
-    }, function(name, original) {
-        $.fn[name] = function(selector) {
+    }, function (name, original) {
+        $.fn[name] = function (selector) {
             var ret = [],
                 insert = $(selector),
                 elems, i, l, tmplItems,
@@ -110,24 +116,24 @@
     $.fn.extend({
         // Use first wrapped element as template markup.
         // Return wrapped set of template items, obtained by rendering template against data.
-        tmpl: function(data, options, parentItem) {
+        tmpl: function (data, options, parentItem) {
             var ret = $.tmpl(this[0], data, options, parentItem);
             return ret;
         },
 
         // Find which rendered template item the first wrapped DOM element belongs to
-        tmplItem: function() {
+        tmplItem: function () {
             var ret = $.tmplItem(this[0]);
             return ret;
         },
 
         // Consider the first wrapped element as a template declaration, and get the compiled template or store it as a named template.
-        template: function(name) {
+        template: function (name) {
             var ret = $.template(name, this[0]);
             return ret;
         },
 
-        domManip: function(args, table, callback, options) {
+        domManip: function (args, table, callback, options) {
             if (args[0] && $.isArray(args[0])) {
                 var dmArgs = $.makeArray(arguments),
                     elems = args[0],
@@ -136,7 +142,7 @@
                     tmplItem;
                 while (i < elemsLength && !(tmplItem = $.data(elems[i++], "tmplItem"))) {}
                 if (tmplItem && cloneIndex) {
-                    dmArgs[2] = function(fragClone) {
+                    dmArgs[2] = function (fragClone) {
                         // Handler called by oldManip when rendered template has been inserted into DOM.
                         $.tmpl.afterManip(this, fragClone, callback);
                     };
@@ -155,7 +161,7 @@
 
     $.extend({
         // Return wrapped set of template items, obtained by rendering template against data.
-        tmpl: function(tmpl, data, options, parentItem) {
+        tmpl: function (tmpl, data, options, parentItem) {
             var ret, topLevel = !parentItem;
             if (topLevel) {
                 // This is a top-level tmpl call (not from a nested template using {{tmpl}})
@@ -184,14 +190,14 @@
                 updateWrapped(options, options.wrapped);
             }
             ret = $.isArray(data) ?
-                $.map(data, function(dataItem) {
+                $.map(data, function (dataItem) {
                     return dataItem ? newTmplItem(options, parentItem, tmpl, dataItem) : null;
                 }) : [newTmplItem(options, parentItem, tmpl, data)];
             return topLevel ? $(build(parentItem, null, ret)) : ret;
         },
 
         // Return rendered template item for an element.
-        tmplItem: function(elem) {
+        tmplItem: function (elem) {
             var tmplItem;
             if (elem instanceof $) {
                 elem = elem[0];
@@ -212,7 +218,7 @@
         // will return the compiled template, without adding a name reference.
         // If templateString includes at least one HTML tag, $.template( templateString ) is equivalent
         // to $.template( null, templateString )
-        template: function(name, tmpl) {
+        template: function (name, tmpl) {
             if (tmpl) {
                 // Compile template and associate with name
                 if (typeof tmpl === "string") {
@@ -237,7 +243,7 @@
                     $.template(null, name))) : null;
         },
 
-        encode: function(text) {
+        encode: function (text) {
             // Do HTML encoding replacing < > & and ' and " by corresponding entities.
             return ("" + text).split("<").join("&lt;").split(">").join("&gt;").split('"').join("&#34;").split("'").join("&#39;");
         }
@@ -246,19 +252,25 @@
     $.extend($.tmpl, {
         tag: {
             "tmpl": {
-                _default: { $2: "null" },
+                _default: {
+                    $2: "null"
+                },
                 open: "if($notnull_1){__=__.concat($item.nest($1,$2));}"
-                    // tmpl target parameter can be of type function, so use $1, not $1a (so not auto detection of functions)
-                    // This means that {{tmpl foo}} treats foo as a template (which IS a function).
-                    // Explicit parens can be used if foo is a function that returns a template: {{tmpl foo()}}.
+                // tmpl target parameter can be of type function, so use $1, not $1a (so not auto detection of functions)
+                // This means that {{tmpl foo}} treats foo as a template (which IS a function).
+                // Explicit parens can be used if foo is a function that returns a template: {{tmpl foo()}}.
             },
             "wrap": {
-                _default: { $2: "null" },
+                _default: {
+                    $2: "null"
+                },
                 open: "$item.calls(__,$1,$2);__=[];",
                 close: "call=$item.calls();__=call._.concat($item.wrap(call,__));"
             },
             "each": {
-                _default: { $2: "$index, $value" },
+                _default: {
+                    $2: "$index, $value"
+                },
                 open: "if($notnull_1){$.each($1a,function($2){with(this){",
                 close: "}});}"
             },
@@ -281,7 +293,9 @@
             },
             "=": {
                 // Encoded expression evaluation. Abbreviated form is ${}.
-                _default: { $1: "$data" },
+                _default: {
+                    $1: "$data"
+                },
                 open: "if($notnull_1){__.push($.encode($1a));}"
             },
             "!": {
@@ -291,7 +305,7 @@
         },
 
         // This stub can be overridden, e.g. in jquery.tmplPlus for providing rendered events
-        complete: function(items) {
+        complete: function (items) {
             newTmplItems = {};
         },
 
@@ -317,7 +331,7 @@
     function build(tmplItem, nested, content) {
         // Convert hierarchical content into flat string array
         // and finally return array of fragments ready for DOM insertion
-        var frag, ret = content ? $.map(content, function(item) {
+        var frag, ret = content ? $.map(content, function (item) {
                 return (typeof item === "string") ?
                     // Insert template item annotations, to be converted to $.data( "tmplItem" ) when elems are inserted into DOM.
                     (tmplItem.key ? item.replace(regex.template_anotate,
@@ -336,7 +350,7 @@
 
         // Support templates which have initial or final text nodes, or consist only of text
         // Also support HTML entities within the HTML markup.
-        ret.replace(regex.text_only_template, function(all, before, middle, after) {
+        ret.replace(regex.text_only_template, function (all, before, middle, after) {
             frag = $(middle).get();
 
             storeTmplItems(frag);
@@ -359,7 +373,7 @@
 
     // Generate a reusable function that will serve to render a template against data
     function buildTmplFn(markup) {
-        var parse_tag = function(all, slash, type, fnargs, target, parens, args) {
+        var parse_tag = function (all, slash, type, fnargs, target, parens, args) {
             if (!type) {
                 return "');__.push('";
             }
@@ -401,7 +415,7 @@
                 "__.push('";
         };
 
-        var depreciated_parse = function() {
+        var depreciated_parse = function () {
             if ($.tmpl.tag[arguments[2]]) {
                 console.group("Depreciated");
                 console.info(markup);
@@ -529,7 +543,13 @@
         if (!content) {
             return stack.pop();
         }
-        stack.push({ _: content, tmpl: tmpl, item: this, data: data, options: options });
+        stack.push({
+            _: content,
+            tmpl: tmpl,
+            item: this,
+            data: data,
+            options: options
+        });
     }
 
     function tiNest(tmpl, data, options) {
@@ -549,7 +569,7 @@
         var wrapped = this._wrap;
         return $.map(
             $($.isArray(wrapped) ? wrapped.join("") : wrapped).filter(filter || "*"),
-            function(e) {
+            function (e) {
                 return textOnly ?
                     e.innerText || e.textContent :
                     e.outerHTML || outerHtml(e);

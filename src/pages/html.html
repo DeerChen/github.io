@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <div id="tb"></div>
+    <div id="container"></div>
 </body>
-<script type="text/x-jquery-tmpl" id="tbTemplate">
+<script type="text/x-jquery-tmpl" id="template">
     <table>
         <caption>
             <h2>${title}</h2>
@@ -25,22 +25,22 @@
                 <th>常见属性</th>
             </tr>
         </thead>
-        <tbody id="${flag}">
+        <tbody>
+            {%each content%}
+                <tr>
+                    <td>
+                        ${$value.label}
+                    </td>
+                    <td>
+                        ${$value.desc}
+                    </td>
+                    <td>
+                        ${$value.attr}
+                    </td>
+                </tr>
+            {%/each%}
         </tbody>
     </table>
-</script>
-<script type="text/x-jquery-tmpl" id="tdTemplate">
-    <tr>
-        <td>
-            ${label}
-        </td>
-        <td>
-            ${desc}
-        </td>
-        <td>
-            ${attr}
-        </td>
-    </tr>
 </script>
 <script src="../scripts/js/frontend.js"></script>
 

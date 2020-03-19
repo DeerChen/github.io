@@ -1,533 +1,532 @@
-{
-    "tb": [{
-            "title": "基础",
-            "flag": "basic"
-        },
-        {
-            "title": "格式",
-            "flag": "format"
-        },
-        {
-            "title": "表单",
-            "flag": "form"
-        },
-        {
-            "title": "框架",
-            "flag": "frame"
-        },
-        {
-            "title": "图像",
-            "flag": "image"
-        },
-        {
-            "title": "音视频",
-            "flag": "av"
-        },
-        {
-            "title": "链接",
-            "flag": "link"
-        },
-        {
-            "title": "列表",
-            "flag": "list"
-        },
-        {
-            "title": "表格",
-            "flag": "table"
-        },
-        {
-            "title": "节",
-            "flag": "section"
-        },
-        {
-            "title": "元信息",
-            "flag": "meta"
-        },
-        {
-            "title": "编程",
-            "flag": "code"
-        }
-    ],
-    "basic": [{
-            "label": "<!DOCTYPE>",
-            "desc": "文档类型",
-            "attr": "html: 指HTML 5"
-        },
-        {
-            "label": "<html>",
-            "desc": "HTML文档",
-            "attr": ""
-        },
-        {
-            "label": "<title>",
-            "desc": "文档标题",
-            "attr": ""
-        },
-        {
-            "label": "<body>",
-            "desc": "文档主体",
-            "attr": ""
-        },
-        {
-            "label": "<h1> to <h6>",
-            "desc": "1到6级标题",
-            "attr": ""
-        },
-        {
-            "label": "<p>",
-            "desc": "段落",
-            "attr": ""
-        },
-        {
-            "label": "<br />",
-            "desc": "换行",
-            "attr": ""
-        },
-        {
-            "label": "<hr />",
-            "desc": "分割线",
-            "attr": ""
-        },
-        {
-            "label": "<!-- -->",
-            "desc": "注释",
-            "attr": ""
-        }
-    ],
-    "format": [{
-            "label": "<abbr>",
-            "desc": "缩写",
-            "attr": "title='原形'"
-        },
-        {
-            "label": "<address>",
-            "desc": "地址",
-            "attr": ""
-        },
-        {
-            "label": "<b>",
-            "desc": "加粗",
-            "attr": ""
-        },
-        {
-            "label": "<big>",
-            "desc": "加大",
-            "attr": ""
-        },
-        {
-            "label": "<code>",
-            "desc": "代码",
-            "attr": ""
-        },
-        {
-            "label": "<del>",
-            "desc": "删除线",
-            "attr": ""
-        },
-        {
-            "label": "<em>",
-            "desc": "斜体",
-            "attr": ""
-        },
-        {
-            "label": "<i>",
-            "desc": "斜体",
-            "attr": ""
-        },
-        {
-            "label": "<ins>",
-            "desc": "下划线",
-            "attr": ""
-        },
-        {
-            "label": "<mark>",
-            "desc": "高亮",
-            "attr": ""
-        },
-        {
-            "label": "<meter>",
-            "desc": "度量图",
-            "attr": "value='值', min='最小值', max='最大值'"
-        },
-        {
-            "label": "<pre>",
-            "desc": "保留空格和换行符输出",
-            "attr": ""
-        },
-        {
-            "label": "<progress>",
-            "desc": "进度条",
-            "attr": "value='值', max='最大值'"
-        },
-        {
-            "label": "<q>",
-            "desc": "加引号",
-            "attr": ""
-        },
-        {
-            "label": "<rp>",
-            "desc": "ruby中不显示",
-            "attr": ""
-        },
-        {
-            "label": "<rt>",
-            "desc": "ruby注音",
-            "attr": ""
-        },
-        {
-            "label": "<ruby>",
-            "desc": "ruby注释",
-            "attr": ""
-        },
-        {
-            "label": "<samp>",
-            "desc": "分离自动连写字符",
-            "attr": ""
-        },
-        {
-            "label": "<small>",
-            "desc": "变小",
-            "attr": ""
-        },
-        {
-            "label": "<strong>",
-            "desc": "加粗",
-            "attr": ""
-        },
-        {
-            "label": "<sup>",
-            "desc": "上标",
-            "attr": ""
-        },
-        {
-            "label": "<sub>",
-            "desc": "下标",
-            "attr": ""
-        },
-        {
-            "label": "<wbr />",
-            "desc": "可能换行处",
-            "attr": ""
-        }
-    ],
-    "form": [{
-            "label": "<form>",
-            "desc": "表单",
-            "attr": "action='请求页面', autocomplete='自动完成功能', method='请求方法'"
-        },
-        {
-            "label": "<input />",
-            "desc": "输入控件",
-            "attr": "list='id', placeholder='替代文本', type='range|checkbox|radio|file|image|submit|text', readonly"
-        },
-        {
-            "label": "<textarea>",
-            "desc": "文本域",
-            "attr": "cols='宽', rows='可见行数', maxlength='最大字符数', autofocus,  required"
-        },
-        {
-            "label": "<button>",
-            "desc": "按钮",
-            "attr": "type='submit|reset'"
-        },
-        {
-            "label": "<select>",
-            "desc": "下拉框",
-            "attr": "multiple: 可多选, size='下拉可见数'"
-        },
-        {
-            "label": "<optgroup>",
-            "desc": "选项组",
-            "attr": "label='组名', disabled"
-        },
-        {
-            "label": "<option>",
-            "desc": "选项",
-            "attr": "value='发送值', selected: 默认选中"
-        },
-        {
-            "label": "<label>",
-            "desc": "input标注",
-            "attr": "for='id'"
-        },
-        {
-            "label": "<fieldset>",
-            "desc": "表单边框",
-            "attr": ""
-        },
-        {
-            "label": "<legend>",
-            "desc": "field标题",
-            "attr": ""
-        },
-        {
-            "label": "<datalist>",
-            "desc": "input可能值",
-            "attr": ""
-        },
-        {
-            "label": "<keygen>",
-            "desc": "密钥生成",
-            "attr": "challenge: 提交时询问, autofocus: 加载默认获取焦点"
-        },
-        {
-            "label": "<output>",
-            "desc": "输出",
-            "attr": "for='输入值id'"
-        }
-    ],
-    "frame": [{
-            "label": "<frame />",
-            "desc": "窗口",
-            "attr": "src='资源地址', marginheight='上下边距', frameborder='0|1', scrolling='yes|no|auto'"
-        },
-        {
-            "label": "<frameset>",
-            "desc": "框架集",
-            "attr": "cols, rows"
-        },
-        {
-            "label": "<noframes>",
-            "desc": "无框架警示",
-            "attr": ""
-        },
-        {
-            "label": "<iframe>",
-            "desc": "内联框架",
-            "attr": ""
-        }
-    ],
-    "image": [{
-            "label": "<img />",
-            "desc": "图像",
-            "attr": "alt='替代文本', height='图像高度', usemap='#map的id值'"
-        },
-        {
-            "label": "<map>",
-            "desc": "映射",
-            "attr": "id='img的usemap值'"
-        },
-        {
-            "label": "<area />",
-            "desc": "map中的区域",
-            "attr": "alt='替换文本', shape='circ|rect|poly', coords='坐标值', href='映射地址'"
-        },
-        {
-            "label": "<canvas>",
-            "desc": "画布",
-            "attr": ""
-        },
-        {
-            "label": "<figcaption>",
-            "desc": "figure标题",
-            "attr": ""
-        },
-        {
-            "label": "<figure>",
-            "desc": "对媒介分组",
-            "attr": ""
-        }
-    ],
-    "av": [{
-            "label": "<audio>",
-            "desc": "音频",
-            "attr": "autoplay: 自动播放, controls: 控件, loop: 循环, muted: 静音, preload"
-        },
-        {
-            "label": "<source />",
-            "desc": "资源",
-            "attr": ""
-        },
-        {
-            "label": "<track />",
-            "desc": "字幕",
-            "attr": "kind='subtitels', srclang='语言'"
-        },
-        {
-            "label": "<video>",
-            "desc": "视频",
-            "attr": "poster='预览图'"
-        }
-    ],
-    "link": [{
-            "label": "<a>",
-            "desc": "超链接",
-            "attr": ""
-        },
-        {
-            "label": "<link />",
-            "desc": "链接",
-            "attr": ""
-        },
-        {
-            "label": "<nav>",
-            "desc": "导航",
-            "attr": ""
-        }
-    ],
-    "list": [{
-            "label": "<ul>",
-            "desc": "无序列表",
-            "attr": ""
-        },
-        {
-            "label": "<ol>",
-            "desc": "有序列表",
-            "attr": "reversed: 降序, start='起始值', type='1|A|a｜i｜I'"
-        },
-        {
-            "label": "<li>",
-            "desc": "项目",
-            "attr": ""
-        },
-        {
-            "label": "<dl>",
-            "desc": "自定义列表",
-            "attr": ""
-        },
-        {
-            "label": "<dt>",
-            "desc": "自定义一级项目",
-            "attr": ""
-        },
-        {
-            "label": "<dd>",
-            "desc": "自定义二级项目",
-            "attr": ""
-        }
-    ],
-    "table": [{
-            "label": "<table>",
-            "desc": "表格",
-            "attr": "border='边框宽度', cellpadding='格内空白', cellspacing='格间空白'"
-        },
-        {
-            "label": "<th>",
-            "desc": "表头",
-            "attr": "colspan='跨列数', rowspan='跨行数'"
-        },
-        {
-            "label": "<tr>",
-            "desc": "表行",
-            "attr": "valign='top|middle|bottom|baseline'"
-        },
-        {
-            "label": "<td>",
-            "desc": "单元格",
-            "attr": "scope='col|colgroup|row|rowgroup'"
-        },
-        {
-            "label": "<thead>",
-            "desc": "表头部分",
-            "attr": "align='right|left|center|justify|char'"
-        },
-        {
-            "label": "<tbody>",
-            "desc": "表身部分",
-            "attr": "char='文本对齐基准字', charoff='对齐偏移量'"
-        },
-        {
-            "label": "<tfoot>",
-            "desc": "表尾脚注",
-            "attr": ""
-        },
-        {
-            "label": "<col />",
-            "desc": "列属性",
-            "attr": ""
-        },
-        {
-            "label": "<colgroup>",
-            "desc": "列组合并属性",
-            "attr": "span='列数'"
-        }
-    ],
-    "section": [{
-            "label": "<style>",
-            "desc": "样式",
-            "attr": "type='text/css', media='screen|all|print|tv|handheld'"
-        },
-        {
-            "label": "<div>",
-            "desc": "盒子",
-            "attr": ""
-        },
-        {
-            "label": "<span>",
-            "desc": "行内",
-            "attr": ""
-        },
-        {
-            "label": "<header>",
-            "desc": "页眉",
-            "attr": ""
-        },
-        {
-            "label": "<footer>",
-            "desc": "页脚",
-            "attr": ""
-        },
-        {
-            "label": "<section>",
-            "desc": "节",
-            "attr": ""
-        },
-        {
-            "label": "<article>",
-            "desc": "文章",
-            "attr": ""
-        },
-        {
-            "label": "<aside>",
-            "desc": "侧栏",
-            "attr": ""
-        },
-        {
-            "label": "<details>",
-            "desc": "细节",
-            "attr": "open: 是否可见"
-        },
-        {
-            "label": "<dialog>",
-            "desc": "对话框",
-            "attr": ""
-        },
-        {
-            "label": "<summary>",
-            "desc": "details标题",
-            "attr": ""
-        }
-    ],
-    "meta": [{
-            "label": "<head>",
-            "desc": "文档头部",
-            "attr": ""
-        },
-        {
-            "label": "<meta />",
-            "desc": "元信息",
-            "attr": ""
-        },
-        {
-            "label": "<base />",
-            "desc": "链接默认项",
-            "attr": "target='_self|_blank', href='默认地址'"
-        }
-    ],
-    "code": [{
-            "label": "<script>",
-            "desc": "脚本",
-            "attr": "async: 异步, defer: 延迟至页面加载完毕"
-        },
-        {
-            "label": "<noscript>",
-            "desc": "无法执行的替代文本",
-            "attr": ""
-        },
-        {
-            "label": "<embed />",
-            "desc": "嵌入内容",
-            "attr": ""
-        }
-    ]
-}
+[
+    {
+        "title": "基础",
+        "content": [
+            {
+                "label": "<!DOCTYPE>",
+                "desc": "文档类型",
+                "attr": "html: 指HTML 5"
+            },
+            {
+                "label": "<html>",
+                "desc": "HTML文档",
+                "attr": ""
+            },
+            {
+                "label": "<title>",
+                "desc": "文档标题",
+                "attr": ""
+            },
+            {
+                "label": "<body>",
+                "desc": "文档主体",
+                "attr": ""
+            },
+            {
+                "label": "<h1> to <h6>",
+                "desc": "1到6级标题",
+                "attr": ""
+            },
+            {
+                "label": "<p>",
+                "desc": "段落",
+                "attr": ""
+            },
+            {
+                "label": "<br />",
+                "desc": "换行",
+                "attr": ""
+            },
+            {
+                "label": "<hr />",
+                "desc": "分割线",
+                "attr": ""
+            },
+            {
+                "label": "<!-- -->",
+                "desc": "注释",
+                "attr": ""
+            }
+        ]
+    },
+    {
+        "title": "格式化",
+        "content": [
+            {
+                "label": "<abbr>",
+                "desc": "缩写",
+                "attr": "title='原形'"
+            },
+            {
+                "label": "<address>",
+                "desc": "地址",
+                "attr": ""
+            },
+            {
+                "label": "<b>",
+                "desc": "加粗",
+                "attr": ""
+            },
+            {
+                "label": "<big>",
+                "desc": "加大",
+                "attr": ""
+            },
+            {
+                "label": "<code>",
+                "desc": "代码",
+                "attr": ""
+            },
+            {
+                "label": "<del>",
+                "desc": "删除线",
+                "attr": ""
+            },
+            {
+                "label": "<em>",
+                "desc": "斜体",
+                "attr": ""
+            },
+            {
+                "label": "<i>",
+                "desc": "斜体",
+                "attr": ""
+            },
+            {
+                "label": "<ins>",
+                "desc": "下划线",
+                "attr": ""
+            },
+            {
+                "label": "<mark>",
+                "desc": "高亮",
+                "attr": ""
+            },
+            {
+                "label": "<meter>",
+                "desc": "度量图",
+                "attr": "value='值', min='最小值', max='最大值'"
+            },
+            {
+                "label": "<pre>",
+                "desc": "保留空格和换行符输出",
+                "attr": ""
+            },
+            {
+                "label": "<progress>",
+                "desc": "进度条",
+                "attr": "value='值', max='最大值'"
+            },
+            {
+                "label": "<q>",
+                "desc": "加引号",
+                "attr": ""
+            },
+            {
+                "label": "<rp>",
+                "desc": "ruby中不显示",
+                "attr": ""
+            },
+            {
+                "label": "<rt>",
+                "desc": "ruby注音",
+                "attr": ""
+            },
+            {
+                "label": "<ruby>",
+                "desc": "ruby注释",
+                "attr": ""
+            },
+            {
+                "label": "<samp>",
+                "desc": "分离自动连写字符",
+                "attr": ""
+            },
+            {
+                "label": "<small>",
+                "desc": "变小",
+                "attr": ""
+            },
+            {
+                "label": "<strong>",
+                "desc": "加粗",
+                "attr": ""
+            },
+            {
+                "label": "<sup>",
+                "desc": "上标",
+                "attr": ""
+            },
+            {
+                "label": "<sub>",
+                "desc": "下标",
+                "attr": ""
+            },
+            {
+                "label": "<wbr />",
+                "desc": "可能换行处",
+                "attr": ""
+            }
+        ]
+    },
+    {
+        "title": "表单",
+        "content": [
+            {
+                "label": "<form>",
+                "desc": "表单",
+                "attr": "action='请求页面', autocomplete='自动完成功能', method='请求方法'"
+            },
+            {
+                "label": "<input />",
+                "desc": "输入控件",
+                "attr": "list='id', placeholder='替代文本', type='range|checkbox|radio|file|image|submit|text', readonly"
+            },
+            {
+                "label": "<textarea>",
+                "desc": "文本域",
+                "attr": "cols='宽', rows='可见行数', maxlength='最大字符数', autofocus,  required"
+            },
+            {
+                "label": "<button>",
+                "desc": "按钮",
+                "attr": "type='submit|reset'"
+            },
+            {
+                "label": "<select>",
+                "desc": "下拉框",
+                "attr": "multiple: 可多选, size='下拉可见数'"
+            },
+            {
+                "label": "<optgroup>",
+                "desc": "选项组",
+                "attr": "label='组名', disabled"
+            },
+            {
+                "label": "<option>",
+                "desc": "选项",
+                "attr": "value='发送值', selected: 默认选中"
+            },
+            {
+                "label": "<label>",
+                "desc": "input标注",
+                "attr": "for='id'"
+            },
+            {
+                "label": "<fieldset>",
+                "desc": "表单边框",
+                "attr": ""
+            },
+            {
+                "label": "<legend>",
+                "desc": "field标题",
+                "attr": ""
+            },
+            {
+                "label": "<datalist>",
+                "desc": "input可能值",
+                "attr": ""
+            },
+            {
+                "label": "<keygen>",
+                "desc": "密钥生成",
+                "attr": "challenge: 提交时询问, autofocus: 加载默认获取焦点"
+            },
+            {
+                "label": "<output>",
+                "desc": "输出",
+                "attr": "for='输入值id'"
+            }
+        ]
+    },
+    {
+        "title": "框架",
+        "content": [
+            {
+                "label": "<frame />",
+                "desc": "窗口",
+                "attr": "src='资源地址', marginheight='上下边距', frameborder='0|1', scrolling='yes|no|auto'"
+            },
+            {
+                "label": "<frameset>",
+                "desc": "框架集",
+                "attr": "cols, rows"
+            },
+            {
+                "label": "<noframes>",
+                "desc": "无框架警示",
+                "attr": ""
+            },
+            {
+                "label": "<iframe>",
+                "desc": "内联框架",
+                "attr": ""
+            }
+        ]
+    },
+    {
+        "title": "图像",
+        "content": [
+            {
+                "label": "<img />",
+                "desc": "图像",
+                "attr": "alt='替代文本', height='图像高度', usemap='#map的id值'"
+            },
+            {
+                "label": "<map>",
+                "desc": "映射",
+                "attr": "id='img的usemap值'"
+            },
+            {
+                "label": "<area />",
+                "desc": "map中的区域",
+                "attr": "alt='替换文本', shape='circ|rect|poly', coords='坐标值', href='映射地址'"
+            },
+            {
+                "label": "<canvas>",
+                "desc": "画布",
+                "attr": ""
+            },
+            {
+                "label": "<figcaption>",
+                "desc": "figure标题",
+                "attr": ""
+            },
+            {
+                "label": "<figure>",
+                "desc": "对媒介分组",
+                "attr": ""
+            }
+        ]
+    },
+    {
+        "title": "音视频",
+        "content": [
+            {
+                "label": "<audio>",
+                "desc": "音频",
+                "attr": "autoplay: 自动播放, controls: 控件, loop: 循环, muted: 静音, preload"
+            },
+            {
+                "label": "<source />",
+                "desc": "资源",
+                "attr": ""
+            },
+            {
+                "label": "<track />",
+                "desc": "字幕",
+                "attr": "kind='subtitels', srclang='语言'"
+            },
+            {
+                "label": "<video>",
+                "desc": "视频",
+                "attr": "poster='预览图'"
+            }
+        ]
+    },
+    {
+        "title": "链接",
+        "content": [
+            {
+                "label": "<a>",
+                "desc": "超链接",
+                "attr": ""
+            },
+            {
+                "label": "<link />",
+                "desc": "链接",
+                "attr": ""
+            },
+            {
+                "label": "<nav>",
+                "desc": "导航",
+                "attr": ""
+            }
+        ]
+    },
+    {
+        "title": "列表",
+        "content": [
+            {
+                "label": "<ul>",
+                "desc": "无序列表",
+                "attr": ""
+            },
+            {
+                "label": "<ol>",
+                "desc": "有序列表",
+                "attr": "reversed: 降序, start='起始值', type='1|A|a｜i｜I'"
+            },
+            {
+                "label": "<li>",
+                "desc": "项目",
+                "attr": ""
+            },
+            {
+                "label": "<dl>",
+                "desc": "自定义列表",
+                "attr": ""
+            },
+            {
+                "label": "<dt>",
+                "desc": "自定义一级项目",
+                "attr": ""
+            },
+            {
+                "label": "<dd>",
+                "desc": "自定义二级项目",
+                "attr": ""
+            }
+        ]
+    },
+    {
+        "title": "表格",
+        "content": [
+            {
+                "label": "<table>",
+                "desc": "表格",
+                "attr": "border='边框宽度', cellpadding='格内空白', cellspacing='格间空白'"
+            },
+            {
+                "label": "<th>",
+                "desc": "表头",
+                "attr": "colspan='跨列数', rowspan='跨行数'"
+            },
+            {
+                "label": "<tr>",
+                "desc": "表行",
+                "attr": "valign='top|middle|bottom|baseline'"
+            },
+            {
+                "label": "<td>",
+                "desc": "单元格",
+                "attr": "scope='col|colgroup|row|rowgroup'"
+            },
+            {
+                "label": "<thead>",
+                "desc": "表头部分",
+                "attr": "align='right|left|center|justify|char'"
+            },
+            {
+                "label": "<tbody>",
+                "desc": "表身部分",
+                "attr": "char='文本对齐基准字', charoff='对齐偏移量'"
+            },
+            {
+                "label": "<tfoot>",
+                "desc": "表尾脚注",
+                "attr": ""
+            },
+            {
+                "label": "<col />",
+                "desc": "列属性",
+                "attr": ""
+            },
+            {
+                "label": "<colgroup>",
+                "desc": "列组合并属性",
+                "attr": "span='列数'"
+            }
+        ]
+    },
+    {
+        "title": "节",
+        "content": [
+            {
+                "label": "<style>",
+                "desc": "样式",
+                "attr": "type='text/css', media='screen|all|print|tv|handheld'"
+            },
+            {
+                "label": "<div>",
+                "desc": "盒子",
+                "attr": ""
+            },
+            {
+                "label": "<span>",
+                "desc": "行内",
+                "attr": ""
+            },
+            {
+                "label": "<header>",
+                "desc": "页眉",
+                "attr": ""
+            },
+            {
+                "label": "<footer>",
+                "desc": "页脚",
+                "attr": ""
+            },
+            {
+                "label": "<section>",
+                "desc": "节",
+                "attr": ""
+            },
+            {
+                "label": "<article>",
+                "desc": "文章",
+                "attr": ""
+            },
+            {
+                "label": "<aside>",
+                "desc": "侧栏",
+                "attr": ""
+            },
+            {
+                "label": "<details>",
+                "desc": "细节",
+                "attr": "open: 是否可见"
+            },
+            {
+                "label": "<dialog>",
+                "desc": "对话框",
+                "attr": ""
+            },
+            {
+                "label": "<summary>",
+                "desc": "details标题",
+                "attr": ""
+            }
+        ]
+    },
+    {
+        "title": "元信息",
+        "content": [
+            {
+                "label": "<head>",
+                "desc": "文档头部",
+                "attr": ""
+            },
+            {
+                "label": "<meta />",
+                "desc": "元信息",
+                "attr": ""
+            },
+            {
+                "label": "<base />",
+                "desc": "链接默认项",
+                "attr": "target='_self|_blank', href='默认地址'"
+            }
+        ]
+    },
+    {
+        "title": "编程",
+        "content": [
+            {
+                "label": "<script>",
+                "desc": "脚本",
+                "attr": "async: 异步, defer: 延迟至页面加载完毕"
+            },
+            {
+                "label": "<noscript>",
+                "desc": "无法执行的替代文本",
+                "attr": ""
+            },
+            {
+                "label": "<embed />",
+                "desc": "嵌入内容",
+                "attr": ""
+            }
+        ]
+    }
+]

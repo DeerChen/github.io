@@ -1,0 +1,50 @@
+nav {
+    position: sticky;
+    top: 0;
+    border: thin groove #333;
+    width: fit-content;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+span {
+    margin: auto 5px;
+    padding: 5px;
+    display: inline-block;
+    border: black solid;
+    border-width: 0 1px 1px 0;
+    transform: rotate(135deg);
+}
+
+#topic {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    margin: auto;
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    #topic;
+}
+
+tr {
+    &:nth-child(odd) {
+        background-color: transparent;
+
+    }
+
+    &:nth-child(even) {
+        background-color: #f5f6f7;
+    }
+}
+
+th {
+    background-color: #eff3f5;
+}
+
+ol {
+    list-style: decimal inside;
+}
