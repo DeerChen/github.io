@@ -1,0 +1,122 @@
+[
+    {
+        "title": "概览",
+        "points": [
+            {
+                "item": "安装",
+                "content": "npm i -g less"
+            },
+            {
+                "item": "编译",
+                "content": "lessc style.less style.css"
+            },
+            {
+                "item": "引入",
+                "content": "<link rel='stylesheet/less' type='text/css' href='styles.less' />"
+            },
+            {
+                "item": "加载库",
+                "content": "<script src='https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js'></script>"
+            }
+        ]
+    },
+    {
+        "title": "变量",
+        "points": [
+            {
+                "item": "@变量名",
+                "content": "支持运算, 懒加载会导致作用域提升"
+            }
+        ]
+    },
+    {
+        "title": "嵌套",
+        "points": [
+            {
+                "item": "&",
+                "content": "父级"
+            },
+            {
+                "item": "继承",
+                "content": "&:extend()"
+            }
+        ]
+    },
+    {
+        "title": "转义",
+        "points": [
+            {
+                "item": "~",
+                "content": "引号内的内容原样输出, 可以使用JS"
+            }
+        ]
+    },
+    {
+        "title": "函数",
+        "points": [
+            {
+                "item": "calc()",
+                "content": "计算"
+            },
+            {
+                "item": "是否",
+                "content": "isnumber()|iscolor()|isurl()"
+            },
+            {
+                "item": "颜色",
+                "content": "saturate(饱和度)|lighten(亮度)|darken(暗度)|fade(透明度)|mix(混色)"
+            },
+            {
+                "item": "数学",
+                "content": "ceil(向上取整)|floor(向下取整)|percentage(浮点转百分比)|round(四舍五入)|sqrt(开方)|abs(绝对值)|pow(乘方)|"
+            }
+        ]
+    },
+    {
+        "title": "导入",
+        "points": [
+            {
+                "item": "导入less",
+                "content": "@import '文件名'"
+            },
+            {
+                "item": "引用不编译",
+                "content": "@import (reference) '文件名.less'"
+            },
+            {
+                "item": "导入多个同名",
+                "content": "@import (multiple) '文件名.less'"
+            },
+            {
+                "item": "导入css",
+                "content": "@import '文件名.css'"
+            }
+        ]
+    },
+    {
+        "title": "判断",
+        "points": [
+            {
+                "item": "when",
+                "content": "when and|not "
+            },
+            {
+                "item": "逻辑",
+                "content": ">|>=|=|<=|<"
+            }
+        ]
+    },
+    {
+        "title": "符号",
+        "points": [
+            {
+                "item": "空格",
+                "content": "+_"
+            },
+            {
+                "item": "逗号",
+                "content": "+"
+            }
+        ]
+    }
+]

@@ -5,37 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet/less" href="./src/css/frontend.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js" ></script>
+    <script src="//cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./src/scripts/js/jquery.tmpl.js"></script>
 </head>
 
 <body>
-    <h1>Tutorial</h1>
-    <ul>
-        <li>
-            <a onclick="setUrl('html')">
-                HTML
-            </a>
-        </li>
-        <fieldset>
-            <legend>CSS</legend>
-                <li>
-                    <a onclick="setUrl('cssBasic')">
-                        CSS基础
-                    </a>
-                </li>
-                <li>
-                    <a onclick="setUrl('cssAdvanced')">
-                        CSS进阶
-                    </a>
-                </li>
-        </fieldset>
-        <li>
-            <a onclick="setUrl('typescript')">
-                TypeScript
-            </a>
-        </li>
-    </ul>
+    <div id="container"></div>
 </body>
-<script src="./src/scripts/js/index.js"></script>
+<script type="text/x-jquery-tmpl" id="template">
+    <ul>
+        {%if title != ''%}
+            <fieldset>
+                <legend>${title}</legend>
+        {%/if%}
+                {%each items%}
+                    <li>
+                        <a onclick="setUrl('${$value.param}')">
+                            ${$value.name}
+                        </a>
+                    </li>
+                {%/each%}
+        {%if title != 0%}
+            </fieldset>
+        {%/if%}
+    </ul>
+</script>
+<script src="./src/scripts/js/frontend.js"></script>
 
 </html>
