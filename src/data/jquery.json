@@ -1,10 +1,134 @@
 [
     {
-        "title": "",
+        "title": "基础",
         "points": [
             {
-                "item": "",
-                "content": ""
+                "item": "CDN地址",
+                "content": "<script src='//cdn.bootcss.com/jquery/3.4.1/jquery.min.js'></script>"
+            },
+            {
+                "item": "$(document).ready(function(){})|$(function(){jQuery代码})和window.onload",
+                "content": "一个是jQuery在DOM加载完毕之后才能对DOM操作, 可执行多次, 一个是JS在包括外部文件等都加载完再操作, 且只能执行一次"
+            },
+            {
+                "item": "事件",
+                "content": "click|dblclick|mouseenter|mouseleave|hover|keypress|keydown|keyup|submit|change|forcus|blur|load|resize|scroll|unload"
+            },
+            {
+                "item": "keydown和keypress",
+                "content": "一个是按下, 一个需要返回对应ACSII码"
+            },
+            {
+                "item": "$.noConflict()",
+                "content": "释放对$的控制, 可用jQuery代指"
+            }
+        ]
+    },
+    {
+        "title": "效果",
+        "points": [
+            {
+                "item": "隐现",
+                "content": "hide|show|toggle(速度, 回调函数)"
+            },
+            {
+                "item": "淡出淡入",
+                "content": "fadeIn|fadeOut|fadeToggle|fadeTo(速度, 透明度, 回调函数)"
+            },
+            {
+                "item": "滑动",
+                "content": "slideDown|slideUp|slideToggle|"
+            },
+            {
+                "item": "动画",
+                "content": "animate({CSS声明}, 速度, 回调函数)"
+            },
+            {
+                "item": "stop(stopAll=true)",
+                "content": "停止全部动画"
+            },
+            {
+                "item": "使用队列异步调用",
+                "content": "不会阻塞进程"
+            },
+            {
+                "item": "callback",
+                "content": "回调会在完成之后调用"
+            }
+        ]
+    },
+    {
+        "title": "DOM",
+        "points": [
+            {
+                "item": "text、html和val",
+                "content": "一个返回文本, 一个包含html标签, 一个返回表单字段值"
+            },
+            {
+                "item": "attr和prop",
+                "content": "一个是自定义属性, 一个是固有属性"
+            },
+            {
+                "item": "append和after",
+                "content": "一个添加在被选元素结尾, 一个添加在元素之后"
+            },
+            {
+                "item": "prepend和before",
+                "content": "一个添加在被选元素开头, 一个添加在元素之前"
+            },
+            {
+                "item": "remove和empty",
+                "content": "一个是删除父子, 一个只删除子"
+            },
+            {
+                "item": "增删属性名",
+                "content": "addClass|removeClass|toggleClass(类名, switch?: true为只添加, false为只删除)"
+            },
+            {
+                "item": "CSS声明",
+                "content": "css({属性, 值};)"
+            },
+            {
+                "item": "尺寸",
+                "content": "width: 只算元素|innerWidth: 加内边距|outerWidth: 加边框|outerWidth(true): 加外边距|height|innerHeight|outerHeight|outerHeight(true)"
+            }
+        ]
+    },
+    {
+        "title": "遍历",
+        "points": [
+            {
+                "item": "父辈",
+                "content": "parent|parents|parentsUntil"
+            },
+            {
+                "item": "后代",
+                "content": "children|find"
+            },
+            {
+                "item": "同辈",
+                "content": "siblings: 所有同胞|next|nextAll|nextUntil|prev|prevAll|prevUntil"
+            },
+            {
+                "item": "过滤",
+                "content": "first|last|filter|eq(索引号)|not"
+            }
+        ]
+    },
+    {
+        "title": "AJAX",
+        "points": [
+            {
+                "item": "$.load(链接, 参数, 回调函数)",
+                "content": "回调函数: function(responseTxt, statusTxt, xhr){}, statusTxt取值success或error"
+            },
+            {
+                "item": "请求数据",
+                "content": "$.get(链接, function(data, status){}), 数据写在连接后"
+            },
+            {
+                "item": "提交数据",
+                "content": "$.post(链接, 数据, 回调函数), 数据写在正文中"
             }
         ]
     }
